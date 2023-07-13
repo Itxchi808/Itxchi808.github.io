@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+body {
+    background-color: #1d1e20;
+    color: #888;
+}
+
+.header {
+    font-size: 80px;
+    position: absolute;
+    font-weight: 800;
+    letter-spacing: 3px;
+    top: 5%;
+    left: 5%;
+    font-family: "Geologica",sans-serif;
+}
+
+.terminal {
+    background-color: #111;
+    color: #fff;
+    height: 65%;
+    width: 50%;
+    margin-top: 8%;
+}
+
+.terminal .head {
+    background-color: black;
+    padding: 0px 10px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.terminal .body {
+    padding: 10px;
+    font-family: "Geologica",sans-serif;
+}
+.terminal .body span {
+    font-family: "Geologica",sans-serif;
+}
+
+.terminal .head div{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
+
+.terminal .head div:first-child {
+    margin-left: auto;
+}
+
+.terminal .head div:nth-child(1) {
+    background-color: green;
+}
+
+.terminal .head div:nth-child(2) {
+    background-color: yellow;
+}
+
+#tag {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.315);
+    border-radius: 2px;
+    border: 1px solid #aaa;
+    margin-right: 10px;
+    padding: 0px 5px;
+}
+
+.brand {
+    background-color: rgba(255, 0, 0, 0.418);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #ccc;
+    & .fa-brands {
+        font-size: 22px;
+    }
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 400ms all;
+}
+
+.brand:hover {
+    background-color: rgba(255, 0, 0, 0.726);
+    box-shadow: 0px 0px 8px #fff;
+}
+
+.main {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.main h1 {
+    color: #ccc;
+    text-shadow: 0px 0px 6px #da2727;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+    padding: 3px 60px;
+}

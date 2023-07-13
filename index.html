@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Anasayfa</title>
+</head>
+<body>
+    <div class="loader-bg">
+        <div class="loader">
+            <p class="loader-text">MEMORY INITIALIZING...</p>
+            <div class="loads"><div class="load"></div></div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <span class="logo">⊕</span>
+        <a href="/index.html" class="link-item active">Home</a>
+        <a href="/about.html" class="link-item">About</a>
+        <a href="/contact.html" class="link-item">Contact</a>
+    </div>
+
+    <div class="main">
+        <h3>
+            ItxchiAKAR
+        </h3>
+
+        <h2>I AM <h2 id="whoami"></span></h2>
+
+        <a class="btn btn-project" target="_blank" href="https://github.com/Itxchi808"><h2>See my projects</h2></a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/loader.js"></script>
+    <script>
+        setTimeout(() => {
+    var randi = Math.floor(Math.random()*txtss.length)
+    setInterval(() => {
+        randi = Math.floor(Math.random()*txtss.length)
+        typer(txtss[randi],"#whoami")
+        setTimeout(() => {
+            deleter(txtss[randi],"#whoami")
+        }, 1500);
+    }, 3000);
+}, 5000);
+    </script>
+</body>
+</html>

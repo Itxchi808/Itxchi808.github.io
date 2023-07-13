@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Fjalla One',sans-serif;
+    color: #292929;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-radial-gradient();
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+    width: 100%;
+}
+
+.link-item {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ccc;
+    transition: 300ms all;
+    margin-right: 1.2rem;
+}
+
+.link-item:hover {
+    color: #fff;
+    text-shadow: 0px 0px 8px #000;
+}
+.active {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #111111af;
+    position: absolute;
+    right: 5%;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    border: 1px solid #11111198;
+    box-shadow: 0px 0px 8px #111;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    top: 3%;
+}
+
+.logo {
+    color: red;
+    font-weight: 800;
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+.loader-text {
+    color: rgb(216, 13, 13);
+    text-shadow: 0px 0px 8px red;
+    width: 100%;
+    font-family: 'Fjalla One',sans-serif;
+}
+
+.loader-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-radial-gradient();
+    background-color: rgb(180, 180, 180);
+    transition: 300ms all;
+    z-index: 99;
+}
+
+.loader {
+    background-color: #585858;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 10%;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.load {
+    background-color: red;
+    z-index: 99;
+    height: 15px;
+    width: 100%;
+    margin-top: 1px;
+    border-radius: 4px;
+}
+
+.loads {
+    content: '';
+    background-color: rgb(15, 15, 15);
+    height: 17px;
+    width: 100%;
+    z-index: 98;
+    display: flex;
+    border-radius: 4px;
+}
+
+.main {
+    width: 50%;
+    flex-direction: column;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000028;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #1f1f1f;
+    color: red;
+    text-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 8px red;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: 400ms all;
+}
+
+.btn h2 {
+    color: #ccc;
+}
+
+.btn:hover {
+    color: #111;
+    background-color: #3d3d3d28;
+    text-shadow: 0px 0px 4px red;
+    box-shadow: 0px 0px 8px #000;
+}
+
+.btn:hover h2 {
+    color: #111;
+}
